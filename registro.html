@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/registro.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" method="post" id="registroForm">
+        <h2>Registro</h2>
+
+        <div class="input-container">
+          <label class="label-login" for="usuario">Usuario</label>
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Ingrese usuario" name="usuario" id="usuario" />
+        </div>
+
+        <div class="input-container">
+          <label class="label-login" for="contrasena">Contraseña</label>
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            placeholder="Ingrese contraseña"
+            name="contrasena"
+            id="contrasena"
+          />
+        </div>
+
+        <div class="input-container">
+          <label class="label-login" for="firstname">Nombre</label>
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Ingrese nombre" name="firstname" id="firstname"/>
+        </div>
+
+        <div class="input-container">
+          <label class="label-login" for="lastname">Apellido</label>
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Ingrese apellido" name="lastname" id="lastname" />
+        </div>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="admin-checkbox" name="admin" />
+          <label for="admin-checkbox">Registrarse como administrador</label>
+        </div>
+        <button class="button-login" type="submit">Registrarse</button>
+        <p class="signup-link">
+          ¿Ya tienes cuenta? <a href="login.html">Iniciar sesion</a>
+        </p>
+      </form>
+
+      <div class="toggle-container">
+        <span>Modo oscuro</span>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+    <script src="js/registro.js"></script>
+  </body>
+</html>
